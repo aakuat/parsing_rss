@@ -10,9 +10,11 @@ if (mysqli_connect_errno()){
 <head>
 	<title>Post</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 </head>
-<body>
+<body style="background-color:grey;">
 
 <?php 
 		if(isset($_GET['id'])){
@@ -25,7 +27,7 @@ if (mysqli_connect_errno()){
 ?>
 
 <!--post_view-->
-<div style="margin:0 auto;">
+<div style="margin:0 auto; width:900px;background-color:white; height:auto; min-height:100vh;">
 	<h2><?php echo $title; ?></h2>
 	</br>
 	<div><?php echo $body; ?></div>

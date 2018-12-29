@@ -92,7 +92,7 @@ if(!$result){
 			$count_zakon++;
 		} //end of Zakon parse
 
-				foreach ($rt_xml->channel->item as $row){ //rt parse
+				foreach ($rt_xml->channel->item as $row){ //russia_today parse
 				$title = $row->title;
 				$origin1= "abcd"; //origin var
 				$link = $row->link; 
@@ -128,6 +128,8 @@ if(!$result){
 					echo "RT".$count_rt."</br>";
 					}
 					$count_rt++;
-				} //end of rt parse
+				} //end of russia_today11111 parse
+
+				header( "refresh:10;url=view_all.php" );
 
 ?>
